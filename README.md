@@ -6,6 +6,8 @@ rally plugin list --name CustomNova
 rally plugin show CustomNova.boot_from_volume_live_migrate_and_extend
 
 cat boot_from_volume_live_migrate_and_extend.yaml
+
+```yaml
 ---
 CustomNova.boot_from_volume_live_migrate_and_extend:
   - args:
@@ -25,7 +27,7 @@ CustomNova.boot_from_volume_live_migrate_and_extend:
     sla:
       failure_rate:
         max: 0
-
+```
 
 
 rally task start boot_from_volume_live_migrate_and_extend.yaml
